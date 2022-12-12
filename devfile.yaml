@@ -20,6 +20,7 @@ components:
       mountSources: true
   - name: db
     container:
+      memoryLimit: 4G
       image: registry.redhat.io/rhel9/mysql-80
       volumeMounts:
         - name: db-storage
