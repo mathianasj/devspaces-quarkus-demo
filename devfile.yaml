@@ -18,7 +18,16 @@ components:
           path: /home/user/.m2
       memoryLimit: 4G
       mountSources: true
+  - name: db
+    container:
+      image: registry.redhat.io/rhel9/mysql-80
+      volumeMounts:
+        - name: db
+          path: /var/lib/mysql/data
   - name: m2
+    volume:
+      size: 1G
+  - name: db
     volume:
       size: 1G
 commands:
