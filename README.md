@@ -19,3 +19,4 @@
     1. Execute the openapi endpoint to add a new task
     1. Show the database now has the entry
     1. Highlight this is identical to running the ide locally but is consistent across different workstations
+1. Show the openshift deployment aspects and single click on the IDE
