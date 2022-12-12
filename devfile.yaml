@@ -22,12 +22,12 @@ components:
     container:
       image: registry.redhat.io/rhel9/mysql-80
       volumeMounts:
-        - name: db
+        - name: db-storage
           path: /var/lib/mysql/data
   - name: m2
     volume:
       size: 1G
-  - name: db
+  - name: db-storage
     volume:
       size: 1G
 commands:
